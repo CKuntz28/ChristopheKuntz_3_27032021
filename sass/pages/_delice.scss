@@ -81,7 +81,8 @@
   
 }
 
-.bouton-header
+/*-----------------------------------------Section----------------------------------------------*/
+.bouton-bas
 {
     text-align: center;
     color: #FFFFFF;
@@ -94,40 +95,49 @@
     margin-left: 90px;
     margin-top: 30px;
 }
-
-
-/*-----------------------------------------NAV----------------------------------------------*/
-
-.fonctionnement
+/*-----------------------------------------Footer----------------------------------------------*/
+.back-g
 {
-    font-size: 1.3em;
-    font-weight: bolder;
-    margin-left: 30px;
-    margin-top: 40px;
+ background-color: rgb(53, 53, 53);
+height: 230px;
 
 }
-
-.F
+.Logo-footer
 {
+    height: 1.5em;
+    padding: 15px;  
+    
+}
+.fourchette_et_main .fas
+{
+    color:rgb(231, 231, 231);
+    float: left; 
     display: flex;
-    justify-content: center;
-    background-color: rgb(231, 231,231, 0.5);
-    padding: 30px;
-    border-radius: 25px;
-    width: 255px;
-    margin-left: 30px;
-    margin-top: 30px;
-
-}
-
-.choisir
-{
-    margin: 0px;
-    margin-left: 25px;
+    margin-left: 20px;
     margin-right: 20px;
-    font-weight: bolder
+    
+}
+
+.propo
+{
+    color:rgb(231, 231, 231);
+   
+}
+.mention
+{
+    color:rgb(231, 231, 231);
+     margin-left: 20px;
+     margin-bottom: 16px;
+    
 
 }
 
+.mention2
+{
+    color:rgb(231, 231, 231);
+    margin-left: 20px;
+    padding-bottom: 20px;
 
+}
 
+/*-----------------------------------------END----------------------------------------------*/
