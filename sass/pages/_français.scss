@@ -1,6 +1,6 @@
 *
 {
-   font-family :  'Raleway', sans-serif; 
+   font-family : "Roboto", sans-serif; 
 
 }
 
@@ -22,6 +22,13 @@
 
 
 /*-----------------------------------------Header----------------------------------------------*/
+.flêche
+{
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+}
 
 .Logo
 {
@@ -39,12 +46,98 @@
     padding-top: 20px; 
 }
 
-
+.img-rs
+{
+    width: 375px;
+    height: 280px;    
+    object-fit: cover;
+    position: absolute;
+    
+}
 
 
 
 
 /*-----------------------------------------Section----------------------------------------------*/
+
+.couleur-de-fond
+{
+    background-color: rgb(245, 245, 245);
+    border-radius: 35px 35px 0px 0px;
+    position: absolute;
+    width: 375px;
+    height: 1200px;
+    margin-right: 10px;
+    margin-top: 230px;
+   
+}
+
+.coeur-menu
+{
+    font-size: 1.5rem;
+    width: 30px;
+    margin: 30px;
+    margin-top: 40px;
+    float: right;
+  
+}
+
+.titre
+{
+    margin-left: 15px;
+    display: flex;
+    font-size: 2em;
+    font-family: "Shrikhand", sans-serif;        
+}
+
+.EPD
+{
+    color: gray;
+    margin-left: 15px;
+    border-bottom: 3px #99E2D0 solid;
+    width: 40px;
+}
+
+.plats
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.nom-du-p
+{
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.acpgmt
+{
+    color: gray;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 325px;
+    margin-left: 0px;
+    
+}
+
+.prix
+{
+   font-weight: bolder;
+   color: black;
+   float: right;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   width: 30px;
+   margin-right: 0px;
+
+}
+
 
 .bouton-bas
 {
@@ -57,7 +150,8 @@
     border-radius: 20px;
     width: 180px;
     margin-left: 90px;
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 70px;
 }
 
 

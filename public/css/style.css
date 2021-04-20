@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -221,7 +222,7 @@
 }
 
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* ---------------------------------------Body--------------------------------------------*/
@@ -236,198 +237,13 @@
 }
 
 /*-----------------------------------------Header----------------------------------------------*/
-.Logo {
-  height: 2em;
-  display: flex;
-  margin-left: 95px;
-  margin-bottom: 15px;
-}
-
-.color-back {
-  background-color: rgba(231, 231, 231, 0.5);
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-/*-----------------------------------------Section----------------------------------------------*/
-.bouton-bas {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 0.9em;
-  background-color: #9356dc;
-  background-image: linear-gradient(#ff79da, #9256dc);
-  padding: 12px;
-  border-radius: 20px;
-  width: 180px;
-  margin-left: 90px;
-  margin-top: 30px;
-}
-
-/*-----------------------------------------Footer----------------------------------------------*/
-.back-g {
-  background-color: #353535;
-  height: 230px;
-}
-
-.Logo-footer {
-  height: 1.5em;
-  padding: 15px;
-}
-
-.fourchette_et_main .fas {
-  color: #e7e7e7;
-  float: left;
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.propo {
-  color: #e7e7e7;
-}
-
-.mention {
-  color: #e7e7e7;
-  margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-.mention2 {
-  color: #e7e7e7;
-  margin-left: 20px;
-  padding-bottom: 20px;
-}
-
-/*-----------------------------------------END----------------------------------------------*/
-* {
-  font-family: "Raleway", sans-serif;
-}
-
-/* ---------------------------------------Body--------------------------------------------*/
-#bloc_page {
-  background-color: #FFFFFF;
-  margin-block-start: 15px;
-}
-
-.body {
-  width: 375px;
-  margin: auto;
-}
-
-/*-----------------------------------------Header----------------------------------------------*/
-.Logo {
-  height: 2em;
-  display: flex;
-  margin-left: 95px;
-  margin-bottom: 15px;
-}
-
-.color-back {
-  background-color: rgba(231, 231, 231, 0.5);
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  /* margin-left: 118px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #e7e7e7;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.24), #e7e7e7, #e7e7e7, #e7e7e7, #e7e7e7);
-  /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
-}
-
-.geolocalisation {
-  text-align: center;
-  font-weight: bold;
-  margin: 0px;
-  margin-left: 15px;
-}
-
-.intro {
-  text-align: center;
+.flêche {
   font-size: 1.4em;
-  font-weight: bold;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.text {
-  text-align: center;
-  font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
-  color: #8f8f8f;
-}
-
-/*-----------------------------------------Section----------------------------------------------*/
-.bouton-bas {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 0.9em;
-  background-color: #9356dc;
-  background-image: linear-gradient(#ff79da, #9256dc);
-  padding: 12px;
-  border-radius: 20px;
-  width: 180px;
-  margin-left: 90px;
-  margin-top: 30px;
-}
-
-/*-----------------------------------------Footer----------------------------------------------*/
-.back-g {
-  background-color: #353535;
-  height: 230px;
-}
-
-.Logo-footer {
-  height: 1.5em;
-  padding: 15px;
-}
-
-.fourchette_et_main .fas {
-  color: #e7e7e7;
+  margin-top: 5px;
+  margin-left: 20px;
   float: left;
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
-.propo {
-  color: #e7e7e7;
-}
-
-.mention {
-  color: #e7e7e7;
-  margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-.mention2 {
-  color: #e7e7e7;
-  margin-left: 20px;
-  padding-bottom: 20px;
-}
-
-/*-----------------------------------------END----------------------------------------------*/
-* {
-  font-family: "Raleway", sans-serif;
-}
-
-/* ---------------------------------------Body--------------------------------------------*/
-#bloc_page {
-  background-color: #FFFFFF;
-  margin-block-start: 15px;
-}
-
-.body {
-  width: 375px;
-  margin: auto;
-}
-
-/*-----------------------------------------Header----------------------------------------------*/
 .Logo {
   height: 2em;
   display: flex;
@@ -441,154 +257,80 @@
   padding-top: 20px;
 }
 
-.info {
-  display: flex;
-  justify-content: center;
-  /* margin-left: 118px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #e7e7e7;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.24), #e7e7e7, #e7e7e7, #e7e7e7, #e7e7e7);
-  /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
-}
-
-.geolocalisation {
-  text-align: center;
-  font-weight: bold;
-  margin: 0px;
-  margin-left: 15px;
-}
-
-.intro {
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.text {
-  text-align: center;
-  font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
-  color: #8f8f8f;
-}
-
-/*-----------------------------------------Section----------------------------------------------*/
-.bouton-bas {
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 0.9em;
-  background-color: #9356dc;
-  background-image: linear-gradient(#ff79da, #9256dc);
-  padding: 12px;
-  border-radius: 20px;
-  width: 180px;
-  margin-left: 90px;
-  margin-top: 30px;
-}
-
-/*-----------------------------------------Footer----------------------------------------------*/
-.back-g {
-  background-color: #353535;
-  height: 230px;
-}
-
-.Logo-footer {
-  height: 1.5em;
-  padding: 15px;
-}
-
-.fourchette_et_main .fas {
-  color: #e7e7e7;
-  float: left;
-  display: flex;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.propo {
-  color: #e7e7e7;
-}
-
-.mention {
-  color: #e7e7e7;
-  margin-left: 20px;
-  margin-bottom: 16px;
-}
-
-.mention2 {
-  color: #e7e7e7;
-  margin-left: 20px;
-  padding-bottom: 20px;
-}
-
-/*-----------------------------------------END----------------------------------------------*/
-* {
-  font-family: "Raleway", sans-serif;
-}
-
-/* ---------------------------------------Body--------------------------------------------*/
-#bloc_page {
-  background-color: #FFFFFF;
-  margin-block-start: 15px;
-}
-
-.body {
+.img-rs {
   width: 375px;
-  margin: auto;
-}
-
-/*-----------------------------------------Header----------------------------------------------*/
-.Logo {
-  height: 2em;
-  display: flex;
-  margin-left: 95px;
-  margin-bottom: 15px;
-}
-
-.color-back {
-  background-color: rgba(231, 231, 231, 0.5);
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.info {
-  display: flex;
-  justify-content: center;
-  /* margin-left: 118px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #e7e7e7;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.24), #e7e7e7, #e7e7e7, #e7e7e7, #e7e7e7);
-  /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
-}
-
-.geolocalisation {
-  text-align: center;
-  font-weight: bold;
-  margin: 0px;
-  margin-left: 15px;
-}
-
-.intro {
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: bold;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.text {
-  text-align: center;
-  font-size: 0.9em;
-  margin-left: 30px;
-  margin-right: 30px;
-  color: #8f8f8f;
+  height: 280px;
+  object-fit: cover;
+  position: absolute;
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
+.couleur-de-fond {
+  background-color: whitesmoke;
+  border-radius: 35px 35px 0px 0px;
+  position: absolute;
+  width: 375px;
+  height: 1200px;
+  margin-right: 10px;
+  margin-top: 230px;
+}
+
+.coeur-menu {
+  font-size: 1.5rem;
+  width: 30px;
+  margin: 30px;
+  margin-top: 40px;
+  float: right;
+}
+
+.titre {
+  margin-left: 15px;
+  display: flex;
+  font-size: 2em;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.EPD {
+  color: gray;
+  margin-left: 15px;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+}
+
+.plats {
+  background-color: #FFFFFF;
+  box-shadow: 1px 2px 6px #bebebe;
+  border-radius: 15px;
+  width: 325px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.nom-du-p {
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.acpgmt {
+  color: gray;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  width: 325px;
+  margin-left: 0px;
+}
+
+.prix {
+  font-weight: bolder;
+  color: black;
+  float: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 30px;
+  margin-right: 0px;
+}
+
 .bouton-bas {
   text-align: center;
   color: #FFFFFF;
@@ -599,7 +341,8 @@
   border-radius: 20px;
   width: 180px;
   margin-left: 90px;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-bottom: 70px;
 }
 
 /*-----------------------------------------Footer----------------------------------------------*/
