@@ -1,3 +1,5 @@
+
+
 *
 {
     font-family: "Raleway", sans-serif;
@@ -6,23 +8,29 @@
 
 
 /* ---------------------------------------Body--------------------------------------------*/
+
+
 #bloc_page
 {
     background-color: #FFFFFF;
     margin-block-start: 15px;
+  
     
 }
+
 
 
 .body
 {
     width: 375px;
     margin: auto;
+    
 } 
 
 
-
 /*-----------------------------------------Header----------------------------------------------*/
+
+
 
 .Logo
 {
@@ -30,7 +38,8 @@
     display: flex;
     margin-left: 95px;
     margin-bottom: 15px;
-   
+    position: relative;
+    
 }
 
 .color-back
@@ -38,7 +47,16 @@
     background-color: rgba(231, 231, 231, 0.5);
     padding-bottom: 40px;
     padding-top: 20px; 
+    position: relative;
 }
+
+$breakpoints: (mobile: 812px);
+
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 
 .info
 {
@@ -50,18 +68,34 @@
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgb(231, 231, 231), rgb(231, 231, 231),rgb(231, 231, 231),rgb(231, 231, 231));
     /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
-
+    position: relative;
+    @include mobile-only { 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.5em;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .geolocalisation
 {
   text-align: center;
   font-weight: bold;
   margin: 0px;
   margin-left: 15px;
-
+  position: relative;
+   @include mobile-only { 
+    margin-left: 30px;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .intro
 {
     text-align: center;
@@ -69,9 +103,17 @@
     font-weight: bold;
     margin-left: 70px;
     margin-right: 70px;
-
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        }
+    
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .text
 {
   text-align: center;
@@ -79,9 +121,17 @@
   margin-left: 30px;
   margin-right: 30px;
   color: rgb(143, 143, 143);
-  
+  position: relative;
+  @include mobile-only { 
+    font-size: 1.4em;
+    margin-top: 50px;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .bouton-header
 {
     text-align: center;
@@ -94,21 +144,47 @@
     width: 180px;
     margin-left: 90px;
     margin-top: 30px;
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        width: 380px;
+        border-radius: 50px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        margin-left: 200px;
+        }
 }
 
 
-/*-----------------------------------------NAV----------------------------------------------*/
 
+/*-----------------------------------------NAV----------------------------------------------*/
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .fonctionnement
 {
     font-size: 1.3em;
     font-weight: bolder;
     margin-left: 110px;
     margin-right: 50px;
-    margin-top: 40px;
-
+    margin-top: 10px;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+    @include mobile-only { 
+        font-size: 2em;
+        margin-left: 280px;
+        
+        }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .nombre
 {
     margin: 0px 265px 0px 0px;
@@ -119,16 +195,26 @@
     color: #FFFFFF;
     background-color:  #9356dc;
     border-radius: 100%; 
-
+    @include mobile-only{
+        margin: 0px 670px 0px 0px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 2em;
+        margin-top: 8px;
+    }
 }
 
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 
 .F
 {
     display: flex;
     justify-content: center;
-    background-color: rgb(231, 231,231, 0.5);
+    // background-color: rgb(231, 231,231, 0.5);
     padding: 30px;
     padding-left: 0px;
     border-radius: 25px;
@@ -136,30 +222,71 @@
     margin-left: 40px;
     margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    position: relative;
+    @include mobile-only { 
+        width: 550px;
+        margin-left: 70px;
+        padding: 60px;
+        border-radius: 50px;
+        margin-top: 50px;
+        
+        }
+    
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .icone
 {
     margin-left: 28px;
-
+    position: relative;
+    @include mobile-only{
+        font-size: 3em;
+        margin-right: 20px;
+        margin-left: 0px;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .choisir
 {
     margin: 0px;
     margin-left: 25px;
-    font-weight: bolder
-
+    font-weight: bolder;
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 60px;
+        margin-top: 8px;
+    }
+    
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
+
 .back-section
 {
     background-color:  rgb(231, 231,231, 0.5);
-    height: 1250px;
+    height: 1300px;
+    position: relative;
+    @include mobile-only{
+        height: 1750px;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .restaurants
 {
     font-size: 1.3em;
@@ -168,9 +295,21 @@
     margin-right: 50px;
     margin-top: 40px;
     padding-top: 30px;
+    @include mobile-only{
+        font-size: 2em;
+        margin-left: 320px;
+        padding-top: 60px;
+        margin-top: 80px;
+        margin-bottom:45px;
+        
+    }
   
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .image1
 {
     width: 345px;
@@ -180,8 +319,19 @@
     padding: 0px 0px 70px 0px; 
     margin: 15px;     
     object-fit: cover;
+    @include mobile-only{
+        margin-left: 55px;
+        width: 700px;   
+        height: 280px;
+        padding: 0px 0px 80px 0px; 
+    }
+    
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .nouveau
 {
     position: absolute;
@@ -192,16 +342,29 @@
     margin-top: 30px;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
+    @include mobile-only{
+        font-size: 1.5rem;
+        margin-left: 590px;
+        margin-top: 40px;
+        border-radius: 10px;
+        
+    }
+    
 }
 
-.coeur
-{
-    position: absolute;
-    font-size: 1.5rem;
-    margin-top: 215px;
-    margin-left: 310px;
-}
-
+// .coeur
+//  {
+//      position: absolute;
+//      font-size: 1.5rem;
+//     margin-top: 215px;
+//     margin-left: 310px;
+//     color: black;
+//  }
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .la-palette
 {
     position: absolute;
@@ -209,28 +372,48 @@
     font-weight: bolder;
     margin-top: 205px;
     margin-left: 35px;
+    @include mobile-only{
+        margin-top: 305px;
+        margin-left: 90px;
+        font-size: 1.6rem;
+    }
 }
-
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+    }
 .quartier
 {
     position: absolute;
     font-size: 1.2rem;
     margin-top: 230px;
     margin-left: 35px;
+    @include mobile-only{
+        margin-top: 335px;
+        margin-left:90px;
+        font-size: 1.6rem;
+    }
 }
 
 /*-----------------------------------------Footer----------------------------------------------*/
+
+
 .back-g
 {
  background-color: rgb(53, 53, 53);
 height: 230px;
+position: relative;
+
 
 }
+
+
 .Logo-footer
 {
     height: 1.5em;
     padding: 15px;  
-    
+
 }
 .fourchette_et_main .fas
 {

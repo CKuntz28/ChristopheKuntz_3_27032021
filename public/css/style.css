@@ -20,12 +20,14 @@
   display: flex;
   margin-left: 95px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .color-back {
   background-color: rgba(231, 231, 231, 0.5);
   padding-bottom: 40px;
   padding-top: 20px;
+  position: relative;
 }
 
 .info {
@@ -37,6 +39,14 @@
   background-color: #e7e7e7;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), #e7e7e7, #e7e7e7, #e7e7e7, #e7e7e7);
   /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+  }
 }
 
 .geolocalisation {
@@ -44,6 +54,12 @@
   font-weight: bold;
   margin: 0px;
   margin-left: 15px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .geolocalisation {
+    margin-left: 30px;
+  }
 }
 
 .intro {
@@ -52,6 +68,12 @@
   font-weight: bold;
   margin-left: 70px;
   margin-right: 70px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .intro {
+    font-size: 2em;
+  }
 }
 
 .text {
@@ -60,6 +82,13 @@
   margin-left: 30px;
   margin-right: 30px;
   color: #8f8f8f;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .text {
+    font-size: 1.4em;
+    margin-top: 50px;
+  }
 }
 
 .bouton-header {
@@ -73,6 +102,17 @@
   width: 180px;
   margin-left: 90px;
   margin-top: 30px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .bouton-header {
+    font-size: 2em;
+    width: 380px;
+    border-radius: 50px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+  }
 }
 
 /*-----------------------------------------NAV----------------------------------------------*/
@@ -81,7 +121,17 @@
   font-weight: bolder;
   margin-left: 110px;
   margin-right: 50px;
-  margin-top: 40px;
+  margin-top: 10px;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .fonctionnement {
+    font-size: 2em;
+    margin-left: 280px;
+  }
 }
 
 .nombre {
@@ -93,11 +143,19 @@
   background-color: #9356dc;
   border-radius: 100%;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .nombre {
+    margin: 0px 670px 0px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 2em;
+    margin-top: 8px;
+  }
+}
 
 .F {
   display: flex;
   justify-content: center;
-  background-color: rgba(231, 231, 231, 0.5);
   padding: 30px;
   padding-left: 0px;
   border-radius: 25px;
@@ -105,10 +163,28 @@
   margin-left: 40px;
   margin-top: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .F {
+    width: 550px;
+    margin-left: 70px;
+    padding: 60px;
+    border-radius: 50px;
+    margin-top: 50px;
+  }
 }
 
 .icone {
   margin-left: 28px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .icone {
+    font-size: 3em;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
 }
 
 .choisir {
@@ -116,11 +192,24 @@
   margin-left: 25px;
   font-weight: bolder;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .choisir {
+    font-size: 2em;
+    margin-left: 60px;
+    margin-top: 8px;
+  }
+}
 
 /*-----------------------------------------Section----------------------------------------------*/
 .back-section {
   background-color: rgba(231, 231, 231, 0.5);
-  height: 1250px;
+  height: 1300px;
+  position: relative;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .back-section {
+    height: 1750px;
+  }
 }
 
 .restaurants {
@@ -131,6 +220,15 @@
   margin-top: 40px;
   padding-top: 30px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .restaurants {
+    font-size: 2em;
+    margin-left: 320px;
+    padding-top: 60px;
+    margin-top: 80px;
+    margin-bottom: 45px;
+  }
+}
 
 .image1 {
   width: 345px;
@@ -140,6 +238,14 @@
   padding: 0px 0px 70px 0px;
   margin: 15px;
   object-fit: cover;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .image1 {
+    margin-left: 55px;
+    width: 700px;
+    height: 280px;
+    padding: 0px 0px 80px 0px;
+  }
 }
 
 .nouveau {
@@ -152,12 +258,13 @@
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
 }
-
-.coeur {
-  position: absolute;
-  font-size: 1.5rem;
-  margin-top: 215px;
-  margin-left: 310px;
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .nouveau {
+    font-size: 1.5rem;
+    margin-left: 590px;
+    margin-top: 40px;
+    border-radius: 10px;
+  }
 }
 
 .la-palette {
@@ -167,6 +274,13 @@
   margin-top: 205px;
   margin-left: 35px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .la-palette {
+    margin-top: 305px;
+    margin-left: 90px;
+    font-size: 1.6rem;
+  }
+}
 
 .quartier {
   position: absolute;
@@ -174,11 +288,19 @@
   margin-top: 230px;
   margin-left: 35px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .quartier {
+    margin-top: 335px;
+    margin-left: 90px;
+    font-size: 1.6rem;
+  }
+}
 
 /*-----------------------------------------Footer----------------------------------------------*/
 .back-g {
   background-color: #353535;
   height: 230px;
+  position: relative;
 }
 
 .Logo-footer {
@@ -211,14 +333,152 @@
 }
 
 /*-----------------------------------------END----------------------------------------------*/
+/* -------------------Loader ---------------------*/
+.loading-spinner {
+  cursor: progress;
+  position: absolute;
+  width: 375px;
+  height: 812px;
+  z-index: translate-loader;
+  animation: translate-loader 3s;
+}
+.loading-spinner::before {
+  content: "";
+  position: absolute;
+  width: 375px;
+  height: 2340px;
+  overflow: hidden;
+  background: #ffffff;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .loading-spinner::before {
+    width: 812px;
+    height: 3610px;
+  }
+}
+.loading-spinner::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -280px 0 0 -35px;
+  border: 1.5px solid green;
+  border-top: 5px solid #99E2D0;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: loading 1s linear infinite;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .loading-spinner::after {
+    margin: -280px 0 0px 180px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes translate-loader {
+  0% {
+    z-index: 10000;
+  }
+  99% {
+    z-index: 10000;
+  }
+  100% {
+    z-index: -100001;
+  }
+}
+/* -------------------header ---------------------*/
 .bouton-header {
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 1000ms;
+  transition-duration: 100ms;
   cursor: pointer;
 }
-.bouton-header:hover {
+.bouton-header:active {
   transform: scale(1.15);
+}
+
+/* -------------------Fonctionnement---------------------*/
+.F {
+  cursor: pointer;
+  transition: background-color 1000ms;
+  background-color: rgba(231, 231, 231, 0.5);
+}
+.F:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d0a6ec57;
+}
+
+.icone {
+  cursor: pointer;
+  transition: background-color 1000ms;
+  color: black;
+}
+.icone:hover {
+  color: #9356dc;
+}
+
+/* -------------------section-base---------------------*/
+.coeur {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-top: 215px;
+  margin-left: 310px;
+  cursor: pointer;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .coeur {
+    margin-left: 670px;
+    margin-top: 317px;
+    font-size: 2rem;
+  }
+}
+
+.C1 {
+  position: absolute;
+}
+.C1:active {
+  animation-name: C1-i;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes C1-i {}
+.C2 {
+  opacity: 0;
+}
+.C2:active {
+  animation-name: C2-i;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes C2-i {
+  100% {
+    color: #9256dc;
+  }
+}
+/* -------------------section-palette---------------------*/
+.EPD:hover + .groupe {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.groupe {
+  transform: translateY(25px);
+  opacity: 0;
+  transition: 800ms;
+  transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
 
 * {
@@ -235,6 +495,11 @@
   width: 375px;
   margin: auto;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .body {
+    width: 812px;
+  }
+}
 
 /*-----------------------------------------Header----------------------------------------------*/
 .flêche {
@@ -243,6 +508,13 @@
   margin-left: 20px;
   float: left;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .flêche {
+    font-size: 2.5em;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+}
 
 .Logo {
   height: 2em;
@@ -250,9 +522,15 @@
   margin-left: 95px;
   margin-bottom: 15px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .Logo {
+    height: 5em;
+    margin-left: 175px;
+  }
+}
 
 .color-back {
-  background-color: rgba(231, 231, 231, 0.5);
+  background-color: whitesmoke;
   padding-bottom: 40px;
   padding-top: 20px;
 }
@@ -262,6 +540,12 @@
   height: 280px;
   object-fit: cover;
   position: absolute;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .img-rs {
+    width: 812px;
+    height: 560px;
+  }
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
@@ -274,6 +558,13 @@
   margin-right: 10px;
   margin-top: 230px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .couleur-de-fond {
+    width: 812px;
+    height: 2050px;
+    margin-top: 500px;
+  }
+}
 
 .coeur-menu {
   font-size: 1.5rem;
@@ -282,6 +573,13 @@
   margin-top: 40px;
   float: right;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .coeur-menu {
+    font-size: 3rem;
+    margin: 60px;
+    margin-top: 55px;
+  }
+}
 
 .titre {
   margin-left: 15px;
@@ -289,12 +587,25 @@
   font-size: 2em;
   font-family: "Shrikhand", sans-serif;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .titre {
+    margin-left: 50px;
+    font-size: 3em;
+  }
+}
 
 .EPD {
   color: gray;
   margin-left: 15px;
   border-bottom: 3px #99E2D0 solid;
   width: 40px;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .EPD {
+    margin-left: 50px;
+    font-size: 1.5em;
+    border-bottom: 4px #99E2D0 solid;
+  }
 }
 
 .plats {
@@ -306,19 +617,41 @@
   margin-bottom: 15px;
   padding: 10px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .plats {
+    border-radius: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding: 20px 370px 20px 20px;
+  }
+}
 
 .nom-du-p {
+  font-size: 0.95em;
   font-weight: bolder;
   margin-top: 0px;
   margin-bottom: 8px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .nom-du-p {
+    font-size: 2em;
+    width: 700px;
+  }
+}
 
 .acpgmt {
+  font-size: 0.95em;
   color: gray;
   margin-top: 8px;
   margin-bottom: 0px;
-  width: 325px;
+  width: 330px;
   margin-left: 0px;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .acpgmt {
+    font-size: 2em;
+    width: 650px;
+  }
 }
 
 .prix {
@@ -342,7 +675,16 @@
   width: 180px;
   margin-left: 90px;
   margin-top: 60px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .bouton-bas {
+    font-size: 1.9em;
+    width: 280px;
+    padding: 22px;
+    border-radius: 40px;
+    margin-left: 245px;
+  }
 }
 
 /*-----------------------------------------Footer----------------------------------------------*/
@@ -350,10 +692,21 @@
   background-color: #353535;
   height: 230px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .back-g {
+    height: 450px;
+  }
+}
 
 .Logo-footer {
   height: 1.5em;
   padding: 15px;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .Logo-footer {
+    height: 3.5em;
+    padding: 30px;
+  }
 }
 
 .fourchette_et_main .fas {
@@ -363,9 +716,21 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .fourchette_et_main .fas {
+    font-size: 2em;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 
 .propo {
   color: #e7e7e7;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .propo {
+    font-size: 2em;
+  }
 }
 
 .mention {
@@ -373,11 +738,22 @@
   margin-left: 20px;
   margin-bottom: 16px;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .mention {
+    font-size: 2em;
+  }
+}
 
 .mention2 {
   color: #e7e7e7;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-bottom: 20px;
+  text-decoration: none;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .mention2 {
+    font-size: 1.4em;
+  }
 }
 
 /*-----------------------------------------END----------------------------------------------*/
