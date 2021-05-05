@@ -116,10 +116,11 @@ $cd-fas-end:   #9356dc;
 }
 
 /* -------------------section-base---------------------*/ 
+
 @mixin mobile-only {
     @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
         @content;
-    }
+        }
     }
 .coeur
 {
@@ -128,6 +129,7 @@ $cd-fas-end:   #9356dc;
     margin-top: 215px;
     margin-left: 310px;
     cursor: pointer;
+    
     @include mobile-only{
         margin-left: 670px;
         margin-top: 317px;
@@ -139,69 +141,138 @@ $cd-fas-end:   #9356dc;
 {
     position: absolute;
     
-    
-   
-   
-    &:active {
-        animation-name: C1-i;
-        animation-duration: 500ms;
-        animation-fill-mode: forwards;
-        
-     }
-        
-}
-
-   @keyframes C1-i {
-      100% {
-        
-     }
-     }
-
-
-
+    }
+    $prog-bar-dur: 1000ms;
+    $prog-bar-delay: 150ms;
+     
   .C2 
   {
       opacity: 0;
-      
-  
+     
+        
        &:active {
-          animation-name: C2-i;
-          animation-duration: 500ms;
-          animation-fill-mode: forwards;
-          opacity: 1;
-          transform: scale(1); 
-           
-       }
+          animation-name: C2-i; 
+          animation-duration: 1.3s;
+          transform: scale(1.1); 
+          background: linear-gradient(rgb(255, 121, 218), rgb(146, 86, 220));
+            animation-fill-mode: forwards;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
           
-  }
 
+         }
+    }
 
-  @keyframes C2-i {
-     100% {color:rgba(146, 86, 220,);}
-   
+    @keyframes C2-i { 
+        
+        100%{ opacity: 1;}
+        
 }
 
 /* -------------------section-palette---------------------*/ 
 
-.EPD{
-    &:hover + .groupe{
-        transform: translateY(0px);
-        opacity: 1;
-     } 
-    
-}
-.groupe{
-    
-    transform: translateY(25px);
-    opacity: 0;
-    transition: 800ms;
+// .EPD{
+//     &:active + .groupe{
+//         transform: translateY(0px);
+//         opacity: 1; 
+//      }   
+// }
+
+.plat1{
+    cursor: pointer;
+    position: absolute;
+    transform: mymove;
+    animation: mymove 1.5s;
     transition-timing-function: cubic-bezier (.49,.01,.53,1);
+   
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        transform: movecheck-groupe;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            transform: movecheck;
+            animation-fill-mode: forwards;
+          }
+    }
+}
      
+     @keyframes mymove {
+        0% { opacity: 0;transform: translateY(30px);}
+        100% {opacity: 1;transform: translateY(0px);}
+      } 
+   
+.plat2{
+    cursor: pointer;
+    transform: mymove;
+    animation: mymove 2s;
+    transition-timing-function: cubic-bezier (.49,.01,.53,1);
      }
      
+     @keyframes mymove {
+        0% { opacity: 0;transform: translateY(30px);}
+        100% {opacity: 1;transform: translateY(0px);}
+      } 
+      
+.plat3{
+    cursor: pointer;
+    transform: mymove;
+    animation: mymove 2.4s;
+    transition-timing-function: cubic-bezier (.49,.01,.53,1);
+     }
+     
+     @keyframes mymove {
+        0% { opacity: 0;transform: translateY(30px);}
+        100% {opacity: 1;transform: translateY(0px);}
+      } 
+
+.plat4{
+    cursor: pointer;
+    transform: mymove;
+    animation: mymove 3s;
+    transition-timing-function: cubic-bezier (.49,.01,.53,1);
+     }
+     
+     @keyframes mymove {
+        0% { opacity: 0;transform: translateY(30px);}
+        100% {opacity: 1;transform: translateY(0px);}
+      } 
+/* -------------------section-check----------------------*/ 
+
+  
+.groupe-check{
+    cursor: pointer;
+    background-color: #99E2D0;
+    padding: 18px 10px 18px 20px;
+    border-radius: 0px 15px 15px 0px;
+    margin-left: 296px;
+    margin-right: 15px;
+    // position: absolute;
+    opacity: 0;
+            
+    // &:active { 
+    //     animation: movecheck-groupe 0.3s ;
+    //     transform: movecheck-groupe;
+    //     animation-fill-mode: forwards;
         
-   
+    //       }
+    }
 
+@keyframes movecheck-groupe {
+    0% { opacity: 1; transform: scaleX(0); transform-origin: 100% 0%;}
+    100% {opacity: 1; transform: scaleX(1); transform-origin: 100% 0%;}
+  }  
 
-
-
+  .check{ 
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    opacity: 0;
+    
+}
+@keyframes movecheck {
+    0% { opacity: 0; transform: rotate(-360deg);}
+    100% {opacity: 1; transform: rotate(0deg);}
+  }  
+ 

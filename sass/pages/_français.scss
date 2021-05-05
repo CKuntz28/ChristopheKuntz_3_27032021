@@ -188,7 +188,57 @@ $breakpoints: (mobile: 812px);
         @content;
     }
     }
-.plats
+.plat1
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+.plat2
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+.plat3
+{
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgb(190 190 190);
+    border-radius: 15px;
+    width: 325px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    @include mobile-only{
+        border-radius: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        padding: 20px 370px 20px 20px;
+    }
+}
+.plat4
 {
     background-color: #FFFFFF;
     box-shadow: 1px 2px 6px rgb(190 190 190);
@@ -205,7 +255,6 @@ $breakpoints: (mobile: 812px);
     }
 }
 
-
 @mixin mobile-only {
     @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
         @content;
@@ -217,6 +266,7 @@ $breakpoints: (mobile: 812px);
     font-weight: bolder;
     margin-top: 0px;
     margin-bottom: 8px;
+    
     @include mobile-only{
         font-size: 2em;
         width: 700px;
@@ -231,6 +281,7 @@ $breakpoints: (mobile: 812px);
     margin-bottom: 0px;
     width: 330px;
     margin-left: 0px;
+    
     @include mobile-only{
         font-size: 2em;
         width: 650px;
@@ -248,6 +299,8 @@ $breakpoints: (mobile: 812px);
    margin-right: 0px;
 
 }
+
+
 
 
 .bouton-bas
