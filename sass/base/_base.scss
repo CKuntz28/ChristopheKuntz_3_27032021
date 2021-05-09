@@ -62,12 +62,10 @@ $breakpoints: (mobile: 812px);
 {
     display: flex;
     justify-content: center;
-    /* margin-left: 118px; */
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgb(231, 231, 231), rgb(231, 231, 231),rgb(231, 231, 231),rgb(231, 231, 231));
-    /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
     position: relative;
     @include mobile-only { 
         padding-top: 20px;
@@ -188,7 +186,6 @@ $breakpoints: (mobile: 812px);
 .nombre
 {
     margin: 0px 265px 0px 0px;
-   
     padding-right: 5px;
     padding-left: 5px;
     position: absolute;
@@ -214,7 +211,6 @@ $breakpoints: (mobile: 812px);
 {
     display: flex;
     justify-content: center;
-    // background-color: rgb(231, 231,231, 0.5);
     padding: 30px;
     padding-left: 0px;
     border-radius: 25px;
@@ -275,7 +271,7 @@ $breakpoints: (mobile: 812px);
 
 .back-section
 {
-    background-color:  rgb(231, 231,231, 0.5);
+    background-color:  rgba(231, 231,231, 0.5);
     height: 1300px;
     position: relative;
     @include mobile-only{
@@ -352,14 +348,6 @@ $breakpoints: (mobile: 812px);
     
 }
 
-// .coeur
-//  {
-//      position: absolute;
-//      font-size: 1.5rem;
-//     margin-top: 215px;
-//     margin-left: 310px;
-//     color: black;
-//  }
 @mixin mobile-only {
     @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
         @content;

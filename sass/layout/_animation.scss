@@ -21,10 +21,8 @@
         position: absolute;
         width: 375px;
         height: 2340px;
-        // z-index: 10001;
         overflow: hidden;
         background: #ffffff;
-        // opacity: 0.6;
         @include mobile-only{
             width: 812px;
             height: 3610px;
@@ -34,7 +32,6 @@
     }
     &::after {
         box-sizing: border-box;
-        // z-index: 10002;
         content: "";
         position: absolute;
         top: 50%;
@@ -172,20 +169,20 @@ $cd-fas-end:   #9356dc;
 
 /* -------------------section-palette---------------------*/ 
 
-// .EPD{
-//     &:active + .groupe{
-//         transform: translateY(0px);
-//         opacity: 1; 
-//      }   
-// }
-
 .plat1{
     cursor: pointer;
     position: absolute;
     transform: mymove;
     animation: mymove 1.5s;
     transition-timing-function: cubic-bezier (.49,.01,.53,1);
-   
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        transform: tarif;
+        animation-fill-mode: forwards;
+    }
       &:active + .groupe-check{
         animation: movecheck-groupe 0.3s ;
         transform: movecheck-groupe;
@@ -195,52 +192,111 @@ $cd-fas-end:   #9356dc;
             transform: movecheck;
             animation-fill-mode: forwards;
           }
+         
     }
 }
-     
-     @keyframes mymove {
-        0% { opacity: 0;transform: translateY(30px);}
-        100% {opacity: 1;transform: translateY(0px);}
-      } 
+
    
 .plat2{
     cursor: pointer;
+    position: absolute;
     transform: mymove;
     animation: mymove 2s;
     transition-timing-function: cubic-bezier (.49,.01,.53,1);
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        transform: tarif;
+        animation-fill-mode: forwards;
+    }
+      &:active + .groupe-check2{
+        animation: movecheck-groupe 0.3s ;
+        transform: movecheck-groupe;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            transform: movecheck;
+            animation-fill-mode: forwards;
+          }    
      }
-     
-     @keyframes mymove {
-        0% { opacity: 0;transform: translateY(30px);}
-        100% {opacity: 1;transform: translateY(0px);}
-      } 
+   }   
+    
       
 .plat3{
     cursor: pointer;
+    position: absolute;
     transform: mymove;
     animation: mymove 2.4s;
     transition-timing-function: cubic-bezier (.49,.01,.53,1);
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        transform: tarif;
+        animation-fill-mode: forwards;
+    }
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        transform: movecheck-groupe;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            transform: movecheck;
+            animation-fill-mode: forwards;
+          }    
      }
+   } 
      
-     @keyframes mymove {
-        0% { opacity: 0;transform: translateY(30px);}
-        100% {opacity: 1;transform: translateY(0px);}
-      } 
+    
 
 .plat4{
     cursor: pointer;
+    position: absolute;
     transform: mymove;
     animation: mymove 3s;
     transition-timing-function: cubic-bezier (.49,.01,.53,1);
+    &:active .acpgmt{
+        width: 230px;
+    } 
+    &:active .prix{
+        animation: tarif 0.3s;
+        transform: tarif;
+        animation-fill-mode: forwards;
+    }
+    
+      &:active + .groupe-check{
+        animation: movecheck-groupe 0.3s ;
+        transform: movecheck-groupe;
+        animation-fill-mode: forwards;
+        .check{ 
+            animation: movecheck 0.5s;
+            transform: movecheck;
+            animation-fill-mode: forwards;
+          }    
      }
-     
-     @keyframes mymove {
-        0% { opacity: 0;transform: translateY(30px);}
-        100% {opacity: 1;transform: translateY(0px);}
+   } 
+      
+      @keyframes tarif {
+        
+        0% {transform: translateX(295px) translateY(-18px);}
+        100% {transform: translateX(235px) translateY(-18px);}
+        
       } 
+      
+         @keyframes mymove {
+            0% { opacity: 0;transform: translateY(30px);}
+            100% {opacity: 1;transform: translateY(0px);}
+          } 
+       
 /* -------------------section-check----------------------*/ 
-
-  
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
 .groupe-check{
     cursor: pointer;
     background-color: #99E2D0;
@@ -248,16 +304,32 @@ $cd-fas-end:   #9356dc;
     border-radius: 0px 15px 15px 0px;
     margin-left: 296px;
     margin-right: 15px;
-    // position: absolute;
     opacity: 0;
-            
-    // &:active { 
-    //     animation: movecheck-groupe 0.3s ;
-    //     transform: movecheck-groupe;
-    //     animation-fill-mode: forwards;
-        
-    //       }
+    @include mobile-only{
+        padding: 30px 10px 30px 20px;
+    border-radius: 0px 30px 30px 0px;
+    margin-left: 650px;
+    margin-right: 47px;
     }
+   
+    }   
+    .groupe-check2{
+        cursor: pointer;
+        background-color: #99E2D0;
+        padding: 18px 10px 18px 20px;
+        border-radius: 0px 15px 15px 0px;
+        margin-left: 296px;
+        margin-right: 15px;
+        opacity: 0;
+        @include mobile-only{
+            padding: 30px 10px 30px 20px;
+        border-radius: 0px 30px 30px 0px;
+        margin-left: 650px;
+        margin-right: 47px;
+        }
+        
+        }   
+                
 
 @keyframes movecheck-groupe {
     0% { opacity: 1; transform: scaleX(0); transform-origin: 100% 0%;}
@@ -269,6 +341,10 @@ $cd-fas-end:   #9356dc;
     color: #FFFFFF;
     font-size: 1.5rem;
     opacity: 0;
+    @include mobile-only{
+        font-size: 3rem;
+        margin-left: 14px;
+    }
     
 }
 @keyframes movecheck {

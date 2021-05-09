@@ -33,12 +33,10 @@
 .info {
   display: flex;
   justify-content: center;
-  /* margin-left: 118px; */
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #e7e7e7;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), #e7e7e7, #e7e7e7, #e7e7e7, #e7e7e7);
-  /* box-shadow: 1px 2px 6px rgb(190, 190, 190); */
   position: relative;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -473,6 +471,14 @@
   animation: mymove 1.5s;
   transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
+.plat1:active .acpgmt {
+  width: 230px;
+}
+.plat1:active .prix {
+  animation: tarif 0.3s;
+  transform: tarif;
+  animation-fill-mode: forwards;
+}
 .plat1:active + .groupe-check {
   animation: movecheck-groupe 0.3s;
   transform: movecheck-groupe;
@@ -484,57 +490,92 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes mymove {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .plat2 {
   cursor: pointer;
+  position: absolute;
   transform: mymove;
   animation: mymove 2s;
   transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
-
-@keyframes mymove {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.plat2:active .acpgmt {
+  width: 230px;
 }
+.plat2:active .prix {
+  animation: tarif 0.3s;
+  transform: tarif;
+  animation-fill-mode: forwards;
+}
+.plat2:active + .groupe-check2 {
+  animation: movecheck-groupe 0.3s;
+  transform: movecheck-groupe;
+  animation-fill-mode: forwards;
+}
+.plat2:active + .groupe-check2 .check {
+  animation: movecheck 0.5s;
+  transform: movecheck;
+  animation-fill-mode: forwards;
+}
+
 .plat3 {
   cursor: pointer;
+  position: absolute;
   transform: mymove;
   animation: mymove 2.4s;
   transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
-
-@keyframes mymove {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.plat3:active .acpgmt {
+  width: 230px;
 }
+.plat3:active .prix {
+  animation: tarif 0.3s;
+  transform: tarif;
+  animation-fill-mode: forwards;
+}
+.plat3:active + .groupe-check {
+  animation: movecheck-groupe 0.3s;
+  transform: movecheck-groupe;
+  animation-fill-mode: forwards;
+}
+.plat3:active + .groupe-check .check {
+  animation: movecheck 0.5s;
+  transform: movecheck;
+  animation-fill-mode: forwards;
+}
+
 .plat4 {
   cursor: pointer;
+  position: absolute;
   transform: mymove;
   animation: mymove 3s;
   transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
+.plat4:active .acpgmt {
+  width: 230px;
+}
+.plat4:active .prix {
+  animation: tarif 0.3s;
+  transform: tarif;
+  animation-fill-mode: forwards;
+}
+.plat4:active + .groupe-check {
+  animation: movecheck-groupe 0.3s;
+  transform: movecheck-groupe;
+  animation-fill-mode: forwards;
+}
+.plat4:active + .groupe-check .check {
+  animation: movecheck 0.5s;
+  transform: movecheck;
+  animation-fill-mode: forwards;
+}
 
+@keyframes tarif {
+  0% {
+    transform: translateX(295px) translateY(-18px);
+  }
+  100% {
+    transform: translateX(235px) translateY(-18px);
+  }
+}
 @keyframes mymove {
   0% {
     opacity: 0;
@@ -555,6 +596,32 @@
   margin-right: 15px;
   opacity: 0;
 }
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .groupe-check {
+    padding: 30px 10px 30px 20px;
+    border-radius: 0px 30px 30px 0px;
+    margin-left: 650px;
+    margin-right: 47px;
+  }
+}
+
+.groupe-check2 {
+  cursor: pointer;
+  background-color: #99E2D0;
+  padding: 18px 10px 18px 20px;
+  border-radius: 0px 15px 15px 0px;
+  margin-left: 296px;
+  margin-right: 15px;
+  opacity: 0;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .groupe-check2 {
+    padding: 30px 10px 30px 20px;
+    border-radius: 0px 30px 30px 0px;
+    margin-left: 650px;
+    margin-right: 47px;
+  }
+}
 
 @keyframes movecheck-groupe {
   0% {
@@ -573,6 +640,12 @@
   color: #FFFFFF;
   font-size: 1.5rem;
   opacity: 0;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .check {
+    font-size: 3rem;
+    margin-left: 14px;
+  }
 }
 
 @keyframes movecheck {
@@ -606,6 +679,10 @@
 }
 
 /*-----------------------------------------Header----------------------------------------------*/
+.flêche .fas {
+  color: black;
+}
+
 .flêche {
   font-size: 1.4em;
   margin-top: 5px;
@@ -718,10 +795,7 @@
   border-radius: 15px;
   width: 325px;
   margin-left: 15px;
-  margin-bottom: 15px;
   padding: 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .plat1 {
@@ -738,7 +812,6 @@
   border-radius: 15px;
   width: 325px;
   margin-left: 15px;
-  margin-bottom: 15px;
   padding: 10px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -756,7 +829,6 @@
   border-radius: 15px;
   width: 325px;
   margin-left: 15px;
-  margin-bottom: 15px;
   padding: 10px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -774,7 +846,6 @@
   border-radius: 15px;
   width: 325px;
   margin-left: 15px;
-  margin-bottom: 15px;
   padding: 10px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -786,15 +857,27 @@
   }
 }
 
+.plat-et-check {
+  margin-bottom: 15px;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .plat-et-check {
+    margin-bottom: 25px;
+  }
+}
+
 .nom-du-p {
   font-size: 0.95em;
   font-weight: bolder;
   margin-top: 0px;
   margin-bottom: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .nom-du-p {
-    font-size: 2em;
+    font-size: 1.8em;
     width: 700px;
   }
 }
@@ -806,15 +889,25 @@
   margin-bottom: 0px;
   width: 330px;
   margin-left: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .acpgmt {
-    font-size: 2em;
+    font-size: 1.8em;
     width: 650px;
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .prix-rotate {
+    transform: translateY(-18px);
+  }
+}
+
 .prix {
+  position: absolute;
   font-weight: bolder;
   color: black;
   float: right;
@@ -822,6 +915,13 @@
   margin-bottom: 0px;
   width: 30px;
   margin-right: 0px;
+  transform: translateX(295px) translateY(-18px);
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .prix {
+    font-size: 2em;
+    margin-left: 280px;
+  }
 }
 
 .bouton-bas {
