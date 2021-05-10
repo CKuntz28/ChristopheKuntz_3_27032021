@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -6,7 +5,6 @@
 /* ---------------------------------------Body--------------------------------------------*/
 #bloc_page {
   background-color: #FFFFFF;
-  margin-block-start: 15px;
 }
 
 .body {
@@ -337,7 +335,6 @@
   position: absolute;
   width: 375px;
   height: 812px;
-  z-index: translate-loader;
   animation: translate-loader 3s;
 }
 .loading-spinner::before {
@@ -467,104 +464,84 @@
 .plat1 {
   cursor: pointer;
   position: absolute;
-  transform: mymove;
   animation: mymove 1.5s;
-  transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
 .plat1:active .acpgmt {
   width: 230px;
 }
 .plat1:active .prix {
   animation: tarif 0.3s;
-  transform: tarif;
   animation-fill-mode: forwards;
 }
 .plat1:active + .groupe-check {
   animation: movecheck-groupe 0.3s;
-  transform: movecheck-groupe;
   animation-fill-mode: forwards;
 }
 .plat1:active + .groupe-check .check {
   animation: movecheck 0.5s;
-  transform: movecheck;
   animation-fill-mode: forwards;
 }
 
 .plat2 {
   cursor: pointer;
   position: absolute;
-  transform: mymove;
   animation: mymove 2s;
-  transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
 .plat2:active .acpgmt {
   width: 230px;
 }
 .plat2:active .prix {
   animation: tarif 0.3s;
-  transform: tarif;
   animation-fill-mode: forwards;
 }
 .plat2:active + .groupe-check2 {
   animation: movecheck-groupe 0.3s;
-  transform: movecheck-groupe;
   animation-fill-mode: forwards;
 }
 .plat2:active + .groupe-check2 .check {
   animation: movecheck 0.5s;
-  transform: movecheck;
   animation-fill-mode: forwards;
 }
 
 .plat3 {
   cursor: pointer;
   position: absolute;
-  transform: mymove;
   animation: mymove 2.4s;
-  transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
 .plat3:active .acpgmt {
   width: 230px;
 }
 .plat3:active .prix {
   animation: tarif 0.3s;
-  transform: tarif;
   animation-fill-mode: forwards;
 }
 .plat3:active + .groupe-check {
   animation: movecheck-groupe 0.3s;
-  transform: movecheck-groupe;
   animation-fill-mode: forwards;
 }
 .plat3:active + .groupe-check .check {
   animation: movecheck 0.5s;
-  transform: movecheck;
   animation-fill-mode: forwards;
 }
 
 .plat4 {
   cursor: pointer;
   position: absolute;
-  transform: mymove;
   animation: mymove 3s;
-  transition-timing-function: cubic-bezier 0.49, 0.01, 0.53, 1;
 }
 .plat4:active .acpgmt {
   width: 230px;
 }
 .plat4:active .prix {
   animation: tarif 0.3s;
-  transform: tarif;
   animation-fill-mode: forwards;
 }
 .plat4:active + .groupe-check {
   animation: movecheck-groupe 0.3s;
-  transform: movecheck-groupe;
   animation-fill-mode: forwards;
 }
 .plat4:active + .groupe-check .check {
   animation: movecheck 0.5s;
-  transform: movecheck;
   animation-fill-mode: forwards;
 }
 
@@ -665,7 +642,6 @@
 /* ---------------------------------------Body--------------------------------------------*/
 #bloc_page {
   background-color: #FFFFFF;
-  margin-block-start: 15px;
 }
 
 .body {
@@ -679,18 +655,18 @@
 }
 
 /*-----------------------------------------Header----------------------------------------------*/
-.flêche .fas {
+.fleche .fas {
   color: black;
 }
 
-.flêche {
+.fleche {
   font-size: 1.4em;
   margin-top: 5px;
   margin-left: 20px;
   float: left;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .flêche {
+  .fleche {
     font-size: 2.5em;
     margin-left: 40px;
     margin-top: 20px;
