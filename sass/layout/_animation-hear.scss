@@ -1,1 +1,53 @@
-/* -------------------section-base---------------------*/ 
+/* -------------------coeur---------------------*/ 
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+        @content;
+        }
+    }
+.coeur
+{
+    position: absolute;
+    font-size: 1.5rem;
+    margin-top: 215px;
+    margin-left: 310px;
+    cursor: pointer;
+    
+    @include mobile-only{
+        margin-left: 670px;
+        margin-top: 317px;
+        font-size: 2rem;
+    }
+}
+
+.C1
+{
+    position: absolute;
+    
+    }
+    $prog-bar-dur: 1000ms;
+    $prog-bar-delay: 150ms;
+     
+  .C2 
+  {
+      opacity: 0;
+     
+        
+       &:active {
+          animation-name: C2-i; 
+          animation-duration: 1.3s;
+          transform: scale(1.1); 
+          background: linear-gradient(rgb(255, 121, 218), rgb(146, 86, 220));
+            animation-fill-mode: forwards;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          
+
+         }
+    }
+
+    @keyframes C2-i { 
+        
+        100%{ opacity: 1;}
+        
+}

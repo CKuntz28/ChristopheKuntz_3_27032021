@@ -18,6 +18,7 @@
   display: flex;
   margin-left: 95px;
   margin-bottom: 15px;
+  margin-top: 15px;
   position: relative;
 }
 
@@ -329,6 +330,76 @@
 }
 
 /*-----------------------------------------END----------------------------------------------*/
+/* -------------------premiere page---------------------*/
+.bouton-header {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+.bouton-header:active {
+  transform: scale(1.15);
+}
+
+/* -------------------Fonctionnement---------------------*/
+.F {
+  cursor: pointer;
+  transition: background-color 1000ms;
+  background-color: rgba(231, 231, 231, 0.5);
+}
+.F:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d0a6ec57;
+}
+
+.icone {
+  cursor: pointer;
+  transition: background-color 1000ms;
+  color: black;
+}
+.icone:hover {
+  color: #9356dc;
+}
+
+/* -------------------coeur---------------------*/
+.coeur {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-top: 215px;
+  margin-left: 310px;
+  cursor: pointer;
+}
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .coeur {
+    margin-left: 670px;
+    margin-top: 317px;
+    font-size: 2rem;
+  }
+}
+
+.C1 {
+  position: absolute;
+}
+
+.C2 {
+  opacity: 0;
+}
+.C2:active {
+  animation-name: C2-i;
+  animation-duration: 1.3s;
+  transform: scale(1.1);
+  background: linear-gradient(#ff79da, #9256dc);
+  animation-fill-mode: forwards;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes C2-i {
+  100% {
+    opacity: 1;
+  }
+}
 /* -------------------Loader ---------------------*/
 .loading-spinner {
   cursor: progress;
@@ -390,77 +461,7 @@
     z-index: -100001;
   }
 }
-/* -------------------header ---------------------*/
-.bouton-header {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 100ms;
-  cursor: pointer;
-}
-.bouton-header:active {
-  transform: scale(1.15);
-}
-
-/* -------------------Fonctionnement---------------------*/
-.F {
-  cursor: pointer;
-  transition: background-color 1000ms;
-  background-color: rgba(231, 231, 231, 0.5);
-}
-.F:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #d0a6ec57;
-}
-
-.icone {
-  cursor: pointer;
-  transition: background-color 1000ms;
-  color: black;
-}
-.icone:hover {
-  color: #9356dc;
-}
-
-/* -------------------section-base---------------------*/
-.coeur {
-  position: absolute;
-  font-size: 1.5rem;
-  margin-top: 215px;
-  margin-left: 310px;
-  cursor: pointer;
-}
-@media screen and (orientation: landscape) and (max-width: 812px) {
-  .coeur {
-    margin-left: 670px;
-    margin-top: 317px;
-    font-size: 2rem;
-  }
-}
-
-.C1 {
-  position: absolute;
-}
-
-.C2 {
-  opacity: 0;
-}
-.C2:active {
-  animation-name: C2-i;
-  animation-duration: 1.3s;
-  transform: scale(1.1);
-  background: linear-gradient(#ff79da, #9256dc);
-  animation-fill-mode: forwards;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes C2-i {
-  100% {
-    opacity: 1;
-  }
-}
-/* -------------------section-palette---------------------*/
+/* -------------------menu---------------------*/
 .plat1 {
   cursor: pointer;
   position: absolute;
