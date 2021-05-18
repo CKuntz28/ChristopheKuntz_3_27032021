@@ -1,61 +1,56 @@
 
-
 *
 {
-    font-family: "Raleway", sans-serif;
- 
+    font-family: "Raleway", sans-serif; 
 }
-
 
 /* ---------------------------------------Body--------------------------------------------*/
 
+$breakpoints: (mobile: 812px);
 
+@mixin mobile-only {
+    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
+       @content;
+     }
+     }           
+    
 #bloc_page
 {
     background-color: #FFFFFF;    
 }
 
-
-
 .body
 {
-    width: 375px;
+    width: 100%;
     margin: auto;
-    
+     
 } 
 
 
+
 /*-----------------------------------------Header----------------------------------------------*/
-
-
 
 .Logo
 {
     height: 2em;
     display: flex;
     margin-left: 95px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: relative;
+    margin: auto;
     
 }
 
-.color-back
-{
+.colorback
+{   
     background-color: rgba(231, 231, 231, 0.5);
     padding-bottom: 40px;
     padding-top: 20px; 
     position: relative;
-}
+} 
 
-$breakpoints: (mobile: 812px);
-
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
-
+         
 .info
 {
     display: flex;
@@ -65,17 +60,13 @@ $breakpoints: (mobile: 812px);
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgb(231, 231, 231), rgb(231, 231, 231),rgb(231, 231, 231),rgb(231, 231, 231));
     position: relative;
-    @include mobile-only { 
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 1.5em;
-    }
+        @include mobile-only { 
+             padding-top: 20px;
+             padding-bottom: 20px;
+             font-size: 1.5em;
+     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .geolocalisation
 {
   text-align: center;
@@ -87,11 +78,7 @@ $breakpoints: (mobile: 812px);
     margin-left: 30px;
     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .intro
 {
     text-align: center;
@@ -103,13 +90,8 @@ $breakpoints: (mobile: 812px);
     @include mobile-only { 
         font-size: 2em;
         }
-    
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .text
 {
   text-align: center;
@@ -123,12 +105,8 @@ $breakpoints: (mobile: 812px);
     margin-top: 50px;
     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
-.bouton-header
+
+.boutonheader
 {
     text-align: center;
     color: #FFFFFF;
@@ -140,6 +118,7 @@ $breakpoints: (mobile: 812px);
     width: 180px;
     margin-left: 90px;
     margin-top: 30px;
+    margin: auto;
     position: relative;
     @include mobile-only { 
         font-size: 2em;
@@ -154,11 +133,7 @@ $breakpoints: (mobile: 812px);
 
 
 /*-----------------------------------------NAV----------------------------------------------*/
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .fonctionnement
 {
     font-size: 1.3em;
@@ -173,14 +148,9 @@ $breakpoints: (mobile: 812px);
     @include mobile-only { 
         font-size: 2em;
         margin-left: 280px;
-        
         }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .nombre
 {
     margin: 0px 265px 0px 0px;
@@ -199,12 +169,6 @@ $breakpoints: (mobile: 812px);
     }
 }
 
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
-
 .F
 {
     display: flex;
@@ -217,21 +181,17 @@ $breakpoints: (mobile: 812px);
     margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     @include mobile-only { 
         width: 550px;
         margin-left: 70px;
         padding: 60px;
         border-radius: 50px;
         margin-top: 50px;
-        
-        }
-    
+        } 
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .icone
 {
     margin-left: 28px;
@@ -242,11 +202,7 @@ $breakpoints: (mobile: 812px);
         margin-left: 0px;
     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .choisir
 {
     margin: 0px;
@@ -261,13 +217,8 @@ $breakpoints: (mobile: 812px);
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
 
-.back-section
+.backsection
 {
     background-color:  rgba(231, 231,231, 0.5);
     height: 1300px;
@@ -276,11 +227,7 @@ $breakpoints: (mobile: 812px);
         height: 1750px;
     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .restaurants
 {
     font-size: 1.3em;
@@ -289,21 +236,15 @@ $breakpoints: (mobile: 812px);
     margin-right: 50px;
     margin-top: 40px;
     padding-top: 30px;
+   
     @include mobile-only{
         font-size: 2em;
         margin-left: 320px;
         padding-top: 60px;
         margin-top: 80px;
-        margin-bottom:45px;
-        
+        margin-bottom:45px;  
     }
-  
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
 .image1
 {
     width: 345px;
@@ -311,7 +252,9 @@ $breakpoints: (mobile: 812px);
     border-radius: 20px;
     background-color: #FFFFFF;
     padding: 0px 0px 70px 0px; 
-    margin: 15px;     
+    margin-top: 15px;  
+    margin-bottom: 15px; 
+    margin-left: 15px; 
     object-fit: cover;
     @include mobile-only{
         margin-left: 55px;
@@ -321,11 +264,12 @@ $breakpoints: (mobile: 812px);
     }
     
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
+@media (min-width: 813px) {
+    .image1 {
+        width: 100%; 
+        margin-left: 0px;  
     }
-    }
+  }
 .nouveau
 {
     position: absolute;
@@ -346,12 +290,7 @@ $breakpoints: (mobile: 812px);
     
 }
 
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
-.la-palette
+.lapalette
 {
     position: absolute;
     font-size: 1.2rem;
@@ -364,11 +303,7 @@ $breakpoints: (mobile: 812px);
         font-size: 1.6rem;
     }
 }
-@mixin mobile-only {
-    @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
-        @content;
-    }
-    }
+
 .quartier
 {
     position: absolute;
@@ -386,23 +321,20 @@ $breakpoints: (mobile: 812px);
 /*-----------------------------------------Footer----------------------------------------------*/
 
 
-.back-g
+.backg
 {
  background-color: rgb(53, 53, 53);
 height: 230px;
 position: relative;
-
-
 }
 
-
-.Logo-footer
+.Logofooter
 {
     height: 1.5em;
     padding: 15px;  
 
 }
-.fourchette_et_main .fas
+.fourchettemain .fas
 {
     color:rgb(231, 231, 231);
     float: left; 
@@ -422,8 +354,6 @@ position: relative;
     color:rgb(231, 231, 231);
      margin-left: 20px;
      margin-bottom: 16px;
-    
-
 }
 
 .mention2

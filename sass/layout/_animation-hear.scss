@@ -2,8 +2,10 @@
 @mixin mobile-only {
     @media screen and (orientation: landscape) and (max-width: map-get($breakpoints, mobile)){
         @content;
-        }
     }
+}
+$prog-bar-dur: 1000ms;
+$prog-bar-delay: 150ms;
 .coeur
 {
     position: absolute;
@@ -11,27 +13,21 @@
     margin-top: 215px;
     margin-left: 310px;
     cursor: pointer;
-    
-    @include mobile-only{
+     @include mobile-only{
         margin-left: 670px;
         margin-top: 317px;
         font-size: 2rem;
     }
 }
-
 .C1
 {
     position: absolute;
     
-    }
-    $prog-bar-dur: 1000ms;
-    $prog-bar-delay: 150ms;
-     
-  .C2 
-  {
-      opacity: 0;
-     
-        
+    }  
+  .C2 {
+      opacity: 0;  
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
        &:active {
           animation-name: C2-i; 
           animation-duration: 1.3s;
@@ -41,13 +37,8 @@
           -webkit-background-clip: text;
           -moz-background-clip: text;
           -webkit-text-fill-color: transparent;
-          
-
          }
     }
-
-    @keyframes C2-i { 
-        
-        100%{ opacity: 1;}
-        
+    @keyframes C2-i {       
+        100%{ opacity: 1;}       
 }

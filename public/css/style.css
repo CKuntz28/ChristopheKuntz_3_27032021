@@ -8,7 +8,7 @@
 }
 
 .body {
-  width: 375px;
+  width: 100%;
   margin: auto;
 }
 
@@ -17,12 +17,13 @@
   height: 2em;
   display: flex;
   margin-left: 95px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: relative;
+  margin: auto;
 }
 
-.color-back {
+.colorback {
   background-color: rgba(231, 231, 231, 0.5);
   padding-bottom: 40px;
   padding-top: 20px;
@@ -88,7 +89,7 @@
   }
 }
 
-.bouton-header {
+.boutonheader {
   text-align: center;
   color: #FFFFFF;
   font-size: 0.9em;
@@ -99,10 +100,11 @@
   width: 180px;
   margin-left: 90px;
   margin-top: 30px;
+  margin: auto;
   position: relative;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .bouton-header {
+  .boutonheader {
     font-size: 2em;
     width: 380px;
     border-radius: 50px;
@@ -161,6 +163,8 @@
   margin-top: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .F {
@@ -198,13 +202,13 @@
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
-.back-section {
+.backsection {
   background-color: rgba(231, 231, 231, 0.5);
   height: 1300px;
   position: relative;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .back-section {
+  .backsection {
     height: 1750px;
   }
 }
@@ -233,7 +237,9 @@
   border-radius: 20px;
   background-color: #FFFFFF;
   padding: 0px 0px 70px 0px;
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   object-fit: cover;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -245,6 +251,12 @@
   }
 }
 
+@media (min-width: 813px) {
+  .image1 {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 .nouveau {
   position: absolute;
   background-color: #99E2D0;
@@ -264,7 +276,7 @@
   }
 }
 
-.la-palette {
+.lapalette {
   position: absolute;
   font-size: 1.2rem;
   font-weight: bolder;
@@ -272,7 +284,7 @@
   margin-left: 35px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .la-palette {
+  .lapalette {
     margin-top: 305px;
     margin-left: 90px;
     font-size: 1.6rem;
@@ -294,18 +306,18 @@
 }
 
 /*-----------------------------------------Footer----------------------------------------------*/
-.back-g {
+.backg {
   background-color: #353535;
   height: 230px;
   position: relative;
 }
 
-.Logo-footer {
+.Logofooter {
   height: 1.5em;
   padding: 15px;
 }
 
-.fourchette_et_main .fas {
+.fourchettemain .fas {
   color: #e7e7e7;
   float: left;
   display: flex;
@@ -331,13 +343,13 @@
 
 /*-----------------------------------------END----------------------------------------------*/
 /* -------------------premiere page---------------------*/
-.bouton-header {
+.boutonheader {
   transform: scale(1);
   transition-property: transform;
   transition-duration: 100ms;
   cursor: pointer;
 }
-.bouton-header:active {
+.boutonheader:active {
   transform: scale(1.15);
 }
 
@@ -383,6 +395,8 @@
 
 .C2 {
   opacity: 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 .C2:active {
   animation-name: C2-i;
@@ -401,28 +415,28 @@
   }
 }
 /* -------------------Loader ---------------------*/
-.loading-spinner {
+.loadingspinner {
   cursor: progress;
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 812px;
   animation: translate-loader 3s;
 }
-.loading-spinner::before {
+.loadingspinner::before {
   content: "";
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 2340px;
   overflow: hidden;
   background: #ffffff;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .loading-spinner::before {
+  .loadingspinner::before {
     width: 812px;
     height: 3610px;
   }
 }
-.loading-spinner::after {
+.loadingspinner::after {
   box-sizing: border-box;
   content: "";
   position: absolute;
@@ -437,8 +451,8 @@
   animation: loading 1s linear infinite;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .loading-spinner::after {
-    margin: -280px 0 0px 180px;
+  .loadingspinner::after {
+    margin: -280px 0 0px -40px;
   }
 }
 
@@ -646,7 +660,7 @@
 }
 
 .body {
-  width: 375px;
+  width: 100%;
   margin: auto;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -665,12 +679,13 @@
   margin-top: 5px;
   margin-left: 20px;
   float: left;
+  margin-top: 20px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .fleche {
     font-size: 2.5em;
     margin-left: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -678,7 +693,9 @@
   height: 2em;
   display: flex;
   margin-left: 95px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
   .Logo {
@@ -687,44 +704,44 @@
   }
 }
 
-.color-back {
+.colorback {
   background-color: whitesmoke;
   padding-bottom: 40px;
   padding-top: 20px;
 }
 
-.img-rs {
-  width: 375px;
+.imgrs {
+  width: 100%;
   height: 280px;
   object-fit: cover;
   position: absolute;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .img-rs {
+  .imgrs {
     width: 812px;
     height: 560px;
   }
 }
 
 /*-----------------------------------------Section----------------------------------------------*/
-.couleur-de-fond {
+.couleurfond {
   background-color: whitesmoke;
   border-radius: 35px 35px 0px 0px;
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 1200px;
   margin-right: 10px;
   margin-top: 230px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .couleur-de-fond {
+  .couleurfond {
     width: 812px;
     height: 2050px;
     margin-top: 500px;
   }
 }
 
-.coeur-menu {
+.coeurmenu {
   font-size: 1.5rem;
   width: 30px;
   margin: 30px;
@@ -732,17 +749,19 @@
   float: right;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .coeur-menu {
+  .coeurmenu {
     font-size: 3rem;
     margin: 60px;
-    margin-top: 55px;
+    margin-top: 45px;
+    width: 48px;
   }
 }
 
 .titre {
+  margin-top: 32px;
   margin-left: 15px;
   display: flex;
-  font-size: 2em;
+  font-size: 1.8em;
   font-family: "Shrikhand", sans-serif;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
@@ -783,6 +802,13 @@
   }
 }
 
+@media (min-width: 813px) {
+  .plat1 {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
 .plat2 {
   background-color: #FFFFFF;
   box-shadow: 1px 2px 6px #bebebe;
@@ -800,6 +826,13 @@
   }
 }
 
+@media (min-width: 813px) {
+  .plat2 {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
 .plat3 {
   background-color: #FFFFFF;
   box-shadow: 1px 2px 6px #bebebe;
@@ -817,6 +850,13 @@
   }
 }
 
+@media (min-width: 813px) {
+  .plat3 {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
 .plat4 {
   background-color: #FFFFFF;
   box-shadow: 1px 2px 6px #bebebe;
@@ -834,16 +874,23 @@
   }
 }
 
-.plat-et-check {
+@media (min-width: 813px) {
+  .plat4 {
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+.platcheck {
   margin-bottom: 15px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .plat-et-check {
+  .platcheck {
     margin-bottom: 25px;
   }
 }
 
-.nom-du-p {
+.nomp {
   font-size: 0.95em;
   font-weight: bolder;
   margin-top: 0px;
@@ -853,7 +900,7 @@
   overflow: hidden;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .nom-du-p {
+  .nomp {
     font-size: 1.8em;
     width: 700px;
   }
@@ -878,7 +925,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .prix-rotate {
+  .prixrotate {
     transform: translateY(-18px);
   }
 }
@@ -901,7 +948,7 @@
   }
 }
 
-.bouton-bas {
+.boutonbas {
   text-align: center;
   color: #FFFFFF;
   font-size: 0.9em;
@@ -915,7 +962,7 @@
   margin-bottom: 50px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .bouton-bas {
+  .boutonbas {
     font-size: 1.9em;
     width: 280px;
     padding: 22px;
@@ -925,28 +972,28 @@
 }
 
 /*-----------------------------------------Footer----------------------------------------------*/
-.back-g {
+.backg {
   background-color: #353535;
-  height: 230px;
+  height: 286px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .back-g {
+  .backg {
     height: 450px;
   }
 }
 
-.Logo-footer {
+.Logofooter {
   height: 1.5em;
   padding: 15px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .Logo-footer {
+  .Logofooter {
     height: 3.5em;
     padding: 30px;
   }
 }
 
-.fourchette_et_main .fas {
+.fourchettemain .fas {
   color: #e7e7e7;
   float: left;
   display: flex;
@@ -954,7 +1001,7 @@
   margin-right: 20px;
 }
 @media screen and (orientation: landscape) and (max-width: 812px) {
-  .fourchette_et_main .fas {
+  .fourchettemain .fas {
     font-size: 2em;
     margin-left: 40px;
     margin-right: 40px;
